@@ -11,7 +11,6 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Content2 from '~/components/widgets/Content2.astro';
 import AuthorProfile from '~/components/widgets/AuthorProfile.astro';
 
 const metadata = {
@@ -32,18 +31,18 @@ const metadata = {
         target: '_blank',
         icon: '',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Learn more', href: 'https://support.cuvva.com/en/' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image-chillwave-kia.png', alt: 'A Kia Sportage at sunset' }}
   >
     <Fragment slot="title">Temporary car insurance</Fragment>
 
     <Fragment slot="subtitle">
       <span>
-        <span class="font-semibold">Temporary, 'short-term' or 'daily' car insurance</span> is a fairly common and reliable
-        way for drivers in the UK to get insurance for a small amount of time - generally starting from 1 hour and going
-        to up to 30 days. <br />
-        <br /> It is fully comprehensive, recognised by UK law, and keeps you safe when you haven't got the time to get figure
+        <span class="font-semibold">Temporary, short-term or daily car insurance</span> is a fairly common and reliable way
+        for drivers in the UK to get insurance for a small amount of time - generally starting from 1 hour and going to up
+        to 30 days. <br />
+        <br /> It is fully comprehensive, recognised by UK law, and keeps you safe when you haven't got the time to figure
         out what annual car insurance to get.</span
       >
     </Fragment>
@@ -60,52 +59,46 @@ const metadata = {
     jobTitle="Content Writer"
   />
 
-  <Content2
-    title="So what is Temporary Car Insurance??"
-    content="Also known as short-term car insurance, temporary car insurance can cover you for a variety of situations. Whether you’re borrowing a friend’s car or picking up a new vehicle, you can insure a car from as little as xxx hour right up to xxx month(s)."
-  />
-
-  <!-- Playting with plain html -->
-
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with Temporary Car Insurance"
-    subtitle="One of the most professional and comprehensive solutions currently on the market for short-term insurance."
+    tagline="UK Insurers"
+    title="The most common temporary car insurers"
+    subtitle="Since 2015, there have been quite a few providers - these are the most popular. Most are insure-techs, having built their service from scratch. The big comparison sites tend to use these companies to actually sell their policies."
     items={[
       {
-        title: 'Flexible Coverage',
+        title: 'Cuvva',
         description:
-          'Temporary car insurance offers flexible coverage options tailored to your needs, whether it’s for 1 Day insurance or longer durations.',
+          'The first app to sell hourly insurance in the UK. Cuvva is built for fast UX and ease. They advertise their hourly policies from £11.90.',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Instant Activation',
-        description: 'Get your drive away insurance activated instantly, allowing you to hit the road without delay.',
+        title: 'Veygo',
+        description:
+          'Owned by welsh insurance giant Admiral, they excel at learner driver, young driver and family policies. They advertise their 1 hour policies at £X.XX',
         icon: 'tabler:components',
       },
       {
-        title: 'Affordable Rates',
+        title: 'DayInsure',
         description:
           'Enjoy competitive pricing for short-term insurance, making it an economical choice for temporary coverage.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Comprehensive Protection',
+        title: 'GoShorty',
         description:
           'Receive comprehensive protection that covers you against various risks while driving, ensuring peace of mind.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Easy to Manage',
+        title: 'Tempcover',
         description:
           'Manage your temporary car insurance policy easily online, with straightforward terms and conditions.',
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Community Support',
+        title: 'RAC',
         description:
           'Join a community of users who share insights and experiences about temporary car insurance and its benefits.',
         icon: 'tabler:bulb',
