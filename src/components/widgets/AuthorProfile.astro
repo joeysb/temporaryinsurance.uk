@@ -1,0 +1,12 @@
+---
+// AuthorProfile.astro
+const { imageUrl, authorName, jobTitle } = Astro.props;
+---
+
+<div class="flex items-center justify-center space-x-4">
+  <img src={imageUrl} alt={`${authorName}'s profile picture`} class="w-16 h-16 rounded-full" />
+  <div>
+    <h3 class="text-lg font-semibold">{authorName}</h3>
+    <p class="text-sm text-gray-600">{jobTitle}</p>
+  </div>
+</div>

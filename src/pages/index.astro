@@ -11,9 +11,11 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content2 from '~/components/widgets/Content2.astro';
+import AuthorProfile from '~/components/widgets/AuthorProfile.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Everything you need to know about Temporary Car Insurance',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,28 +27,25 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Buy Temporary insurance',
+        href: 'https://www.cuvva.com',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: '',
       },
       { text: 'Learn more', href: '#features' },
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
-    <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
-    </Fragment>
+    <Fragment slot="title">Temporary car insurance</Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
+      <span>
+        <span class="font-semibold">Temporary, 'short-term' or 'daily' car insurance</span> is a fairly common and reliable
+        way for drivers in the UK to get insurance for a small amount of time - generally starting from 1 hour and going
+        to up to 30 days. <br />
+        <br /> It is fully comprehensive, recognised by UK law, and keeps you safe when you haven't got the time to get figure
+        out what annual car insurance to get.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
     </Fragment>
   </Hero>
 
@@ -54,48 +53,56 @@ const metadata = {
 
   <Note />
 
+  <AuthorProfile imageUrl="/path/to/profile-picture.jpg" authorName="Joey SB" jobTitle="Content Writer" />
+
+  <Content2
+    title="So what is Temporary Car Insurance??"
+    content="Also known as short-term car insurance, temporary car insurance can cover you for a variety of situations. Whether you’re borrowing a friend’s car or picking up a new vehicle, you can insure a car from as little as xxx hour right up to xxx month(s)."
+  />
+
+  <!-- Playting with plain html -->
+
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
     tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="What you get with Temporary Car Insurance"
+    subtitle="One of the most professional and comprehensive solutions currently on the market for short-term insurance."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Flexible Coverage',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          'Temporary car insurance offers flexible coverage options tailored to your needs, whether it’s for 1 Day insurance or longer durations.',
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+        title: 'Instant Activation',
+        description: 'Get your drive away insurance activated instantly, allowing you to hit the road without delay.',
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'Affordable Rates',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          'Enjoy competitive pricing for short-term insurance, making it an economical choice for temporary coverage.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Comprehensive Protection',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Receive comprehensive protection that covers you against various risks while driving, ensuring peace of mind.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Easy to Manage',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+          'Manage your temporary car insurance policy easily online, with straightforward terms and conditions.',
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Community Support',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+          'Join a community of users who share insights and experiences about temporary car insurance and its benefits.',
         icon: 'tabler:bulb',
       },
     ]}
@@ -105,23 +112,23 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Inside Temporary Car Insurance"
+    title="Understanding Temporary Car Insurance: Flexibility Meets Convenience!"
     items={[
       {
-        title: 'Built on top of Astro 4.0',
+        title: 'Designed for Short-Term Needs',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Temporary car insurance is specifically designed for those who require coverage for short periods, such as 1 Day insurance.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Quick and Simple Process',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'The process to obtain drive away insurance is quick and simple, allowing you to get on the road in no time.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Ideal for Test Drivers',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Perfect for test drivers who need insurance for a limited time, ensuring you are covered while trying out a vehicle.',
       },
     ]}
     image={{
@@ -130,8 +137,10 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Temporary Car Insurance: Your Flexible Solution
+      </h3>
+      Gain a competitive advantage by incorporating industry-leading practices in your short-term insurance needs.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,23 +154,23 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Customisable Options',
+        description: `Tailor your temporary car insurance policy effortlessly to match your specific requirements, ensuring you have the right coverage for your needs.`,
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Multiple Coverage Durations',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Explore various coverage options to find the duration that best suits your needs, whether it’s for 1 Day insurance or longer.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Fully Compliant',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Ensure your temporary car insurance meets all legal requirements, providing you with peace of mind while driving.',
       },
       {
-        title: 'Integration of media',
+        title: 'Seamless Integration',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Easily incorporate your temporary car insurance into your existing plans, making it a hassle-free experience.',
       },
     ]}
     image={{
@@ -169,7 +178,7 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Ensure your temporary car insurance truly represents your needs.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -183,23 +192,23 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Enhanced User Experience',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Captivate your audience with the ease of obtaining temporary car insurance, encouraging longer visits and engagement.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Continuous Updates',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Stay informed about the latest trends and updates in temporary car insurance to ensure you have the best options available.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Time and Resource Efficiency',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Skip the lengthy process of traditional insurance and launch your coverage sooner with temporary car insurance.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Community Insights',
+        description: `Join the growing community of temporary car insurance users for insights, resources, and assistance, ensuring you're well-informed.`,
       },
     ]}
     image={{
@@ -207,7 +216,7 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Designed to foster growth and success in your temporary car insurance journey.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,7 +226,7 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Get your temporary car insurance sorted in no time with AstroWind."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Download</span>',
@@ -226,15 +235,15 @@ const metadata = {
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Add your details</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          "Provide your information to get your temporary car insurance. Remember, it's the details that ensure you get the right coverage.",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Review and Confirm</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Check your policy details and confirm your temporary car insurance. Your unique coverage, tailored for your needs!',
         icon: 'tabler:paint',
       },
       {
@@ -251,58 +260,55 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    title="Most Used Temporary Car Insurance Features"
+    subtitle="Provides frequently used components for obtaining short-term insurance."
     tagline="Components"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'Instant Coverage',
+        description: 'Need coverage fast? Temporary car insurance provides instant options for your needs.',
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+        title: 'Flexible Terms',
+        description: "Choose the duration that suits you best, whether it's for 1 Day insurance or longer.",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        title: 'Comprehensive Options',
+        description: 'Explore various options that cater to your specific temporary car insurance needs.',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
+        title: 'User-Friendly Process',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+          'Experience a seamless process for obtaining your temporary car insurance, making it easy to get started.',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+        title: 'Affordable Pricing',
+        description: 'Enjoy competitive rates for your temporary car insurance, ensuring you get value for your money.',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        title: 'Community Support',
+        description: 'Join a community of users who share insights and experiences about temporary car insurance.',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        title: 'Easy Management',
+        description:
+          'Manage your temporary car insurance policy easily online, with straightforward terms and conditions.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        title: 'Comprehensive Coverage',
+        description: "Ensure you're fully covered with temporary car insurance that meets all your needs.",
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
+        title: 'Quick Setup',
+        description: 'Get your temporary car insurance set up quickly, allowing you to drive away with confidence.',
         icon: 'flat-color-icons:database',
       },
     ]}
@@ -315,50 +321,50 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
+    title="Find out more about Temporary Car Insurance in our Blog"
+    information={`The blog is used to display insights on temporary car insurance.
+                        Each new article will be an important step that you will need to know to be an expert in obtaining short-term insurance.
+                        Temporary car insurance is a very useful option. Thanks.
                 `}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    title="Frequently Asked Questions about Temporary Car Insurance"
+    subtitle="Dive into the following questions to gain insights into the powerful features that temporary car insurance offers and how it can elevate your driving experience."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'What is Temporary Car Insurance?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'Temporary car insurance provides coverage for a limited time, ideal for those needing short-term insurance.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'How does 1 Day Insurance work?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          '1 Day insurance allows you to cover your vehicle for just one day, perfect for short trips or borrowing a car.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'What is Drive Away Insurance?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Drive away insurance is designed for those who need immediate coverage to drive a vehicle away, ensuring you're protected from the start.",
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Who needs Test Driver Insurance?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Test driver insurance is essential for anyone who needs to test drive a vehicle, providing the necessary coverage during the trial.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'How do I apply for Short Term Insurance?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Applying for short-term insurance is straightforward; simply provide your details and select the coverage you need.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'What are the benefits of Temporary Car Insurance?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Temporary car insurance offers flexibility, affordability, and peace of mind for short-term driving needs.',
       },
     ]}
   />
@@ -380,7 +386,7 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Get your Temporary Car Insurance',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
@@ -388,12 +394,13 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Temporary&nbsp;Car&nbsp;Insurance&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap"
+        >for Your Needs</span
+      >
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Don't miss out on the benefits of temporary car insurance. <br class="hidden md:inline" />Get started today!
     </Fragment>
   </CallToAction>
 </Layout>

@@ -1,11 +1,11 @@
 ---
-import { Icon } from 'astro-icon/components';
+const {
+  title = 'Our commitment to you',
+  content = 'At temporarycarinsurance.uk we strive to provide refreshing impartiality on all things temporary car insurance. While we endeavour to present a balanced overview of all available options, it’s important to be transparent: we partner with Cuvva for our insurance policies. This collaboration allows us to focus on crunching the numbers, digging into legal grey areas and putting our effort into ensuring you have the right, timely information to make an informed decision.',
+} = Astro.props;
 ---
 
-<section class="bg-blue-50 dark:bg-slate-800 not-prose">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
-    <span class="font-bold">
-      <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom" /> Philosophy:</span
-    > Simplicity, Best Practices and High Performance
-  </div>
-</section>
+<div class="bg-blue-50 dark:bg-slate-800 p-4 rounded-md shadow-md">
+  <h2 class="text-lg font-semibold text-blue-600 dark:text-blue-300">{title}</h2>
+  <p class="mt-2 text-gray-700 dark:text-gray-300">{content}</p>
+</div>
