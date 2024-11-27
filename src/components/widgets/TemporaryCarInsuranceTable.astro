@@ -9,22 +9,34 @@ const insurancePrices = [
 ---
 
 <div class="my-8 px-4 md:px-8 lg:px-16">
-  <h2 class="text-2xl font-bold mb-4">How much you could be expected to pay</h2>
-  <table class="min-w-full border border-gray-300 rounded-lg overflow-hidden">
-    <thead class="bg-gray-200">
+  <h2 class="text-2xl font-bold mb-4 text-black dark:text-white">How much you could be expected to pay</h2>
+  <table class="min-w-full border border-gray-300 dark:border-gray-600 rounded-lg overflow-hidden">
+    <thead class="bg-white dark:bg-gray-800">
       <tr>
-        <th class="border border-gray-300 px-4 py-2 text-left">Timescale</th>
-        <th class="border border-gray-300 px-4 py-2 text-left">Price (£)</th>
-        <th class="border border-gray-300 px-4 py-2 text-left">Provider</th>
+        <th class="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left text-black dark:text-white"
+          >Timescale</th
+        >
+        <th class="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left text-black dark:text-white"
+          >Price (£)</th
+        >
+        <th class="border border-gray-300 dark:border-gray-600 px-4 py-2 text-left text-black dark:text-white"
+          >Provider</th
+        >
       </tr>
     </thead>
     <tbody>
       {
         insurancePrices.map((insurance) => (
-          <tr class="hover:bg-gray-100">
-            <td class="border border-gray-300 px-4 py-2">{insurance.timescale}</td>
-            <td class="border border-gray-300 px-4 py-2">{insurance.price}</td>
-            <td class="border border-gray-300 px-4 py-2">{insurance.provider}</td>
+          <tr class="hover:bg-gray-200 dark:hover:bg-gray-700">
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2 text-black dark:text-white">
+              {insurance.timescale}
+            </td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2 text-black dark:text-white">
+              {insurance.price}
+            </td>
+            <td class="border border-gray-300 dark:border-gray-600 px-4 py-2 text-black dark:text-white">
+              {insurance.provider}
+            </td>
           </tr>
         ))
       }
